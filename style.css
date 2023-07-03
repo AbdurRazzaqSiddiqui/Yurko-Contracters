@@ -277,6 +277,14 @@ input[type='submit']:hover {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+    /* opacity: 0.7; */
+}
+
+.flex-back {
+    padding: 50px;
+    background-image: url(image4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .flex-item {
@@ -288,6 +296,7 @@ input[type='submit']:hover {
     padding: 20px;
     background-color: #f9f9f9;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    opacity: 0.6;
 }
 
 .flex-item:last-child {
@@ -301,7 +310,7 @@ input[type='submit']:hover {
     display: block;
 }
 
-.flex-container:last-child .flex-item{
+.flex-container:last-child {
     border-bottom: solid 5px #fcb900;
 }
 
@@ -309,6 +318,7 @@ input[type='submit']:hover {
     background-color: #33465b;
     color: #fcb900;
     transition: background-color 0.3s ease;
+    opacity: 1;
 }
 
 .flex-item a {
@@ -370,13 +380,16 @@ input[type='submit']:hover {
 }
 
 .scrolling-div {
-    margin-left: 100px;
+    margin-left: 60px;
+    padding: 0px 40px;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
     flex: 1;
     overflow: auto;
     font-family: MyFont, sans-serif;
 }
 
-.scrolling-div h2{
+.scrolling-div h2 {
     text-align: left;
 }
 
@@ -410,7 +423,7 @@ input[type='submit']:hover {
     width: 200px;
 }
 
-#image1 {
+#about1 {
     background-image: url('about1.jpg');
     background-repeat: no-repeat;
     background-size: contain;
@@ -418,7 +431,7 @@ input[type='submit']:hover {
     width: 100%;
 }
 
-#image2 {
+#about2 {
     background-image: url('about2.jpg');
     background-repeat: no-repeat;
     height: 55%;
@@ -429,7 +442,6 @@ input[type='submit']:hover {
 
 .static-div {
     flex: 1;
-    padding: 10px;
 }
 
 .container-2 {
@@ -449,6 +461,33 @@ input[type='submit']:hover {
 .static-div p {
     position: sticky;
     top: 10px;
+}
+
+.images {
+    color: #33465b;
+    line-height: 190%;
+    font-size: small;
+    flex: 1;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#image-1 {
+    background-image: url(image1.jpg);
+}
+
+#image-2 {
+    background-image: url(image2.jpg);
+}
+
+#image-3 {
+    background-image: url(image3.jpg);
+}
+
+#image-4 {
+    background-image: url(image4.jpg);
 }
 
 @media (max-width: 768px) {
@@ -559,10 +598,16 @@ input[type='submit']:hover {
     }
 
     .scrolling-div {
-        margin-left: 0px;
+        margin: 0px;
+        padding: 0px;
+        border: none;
     }
 
     .container-2 {
         margin-left: 0px;
+    }
+
+    .images {
+        display: none;
     }
 }
