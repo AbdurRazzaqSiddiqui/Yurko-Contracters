@@ -17,11 +17,11 @@
 }
 
 .logo {
-    background-image: url(logo-no-background.png);
+    background-image: url(logo2.jpeg);
     position: relative;
     margin-bottom: 10px;
-    width: 200px;
-    height: 55px;
+    width: 160px;
+    height: 60px;
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 1000;
