@@ -411,17 +411,20 @@ input[type='submit']:hover {
 }
 
 #image1 {
-    background-image: url(about1.jpg);
+    background-image: url('about1.jpg');
     background-repeat: no-repeat;
-    height: 100% !important;
+    background-size: contain;
+    height: 55%;
     width: 100%;
 }
 
 #image2 {
-    background-image: url(about2.jpg);
+    background-image: url('about2.jpg');
     background-repeat: no-repeat;
-    height: 100% !important;
+    height: 55%;
     width: 100%;
+    max-width: 100%;
+    background-size: contain;
 }
 
 .static-div {
