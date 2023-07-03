@@ -490,6 +490,11 @@ input[type='submit']:hover {
     background-image: url(image4.jpg);
 }
 
+iframe {
+    width: 560px;
+    height: 315px;
+}
+
 @media (max-width: 768px) {
     .nav-bar {
         justify-content: space-between;
@@ -609,5 +614,10 @@ input[type='submit']:hover {
 
     .images {
         display: none;
+    }
+
+    iframe {
+        width: auto;
+        height: auto;
     }
 }
