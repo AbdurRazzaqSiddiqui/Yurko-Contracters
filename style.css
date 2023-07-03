@@ -404,6 +404,14 @@ input[type='submit']:hover {
         /* Add this line */
     }
 
+    .form-group {
+        display: block;
+    }
+
+    .input-group {
+        display: block;
+    }
+
     .content {
         display: block;
     }
