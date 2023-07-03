@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: "Avenir Next Cyr", sans-serif;
+    font-family: Garamond, sans-serif;
     /* font-stretch: condensed; */
 }
 
@@ -228,6 +228,8 @@ input[type='submit']:hover {
     flex: 1;
     padding-right: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-top: solid 5px #fcb900;
+    border-bottom: solid 5px #fcb900;
 }
 
 .text h3 {
@@ -252,6 +254,7 @@ input[type='submit']:hover {
 
 .video {
     flex: 1;
+    margin: 40px 0px;
 }
 
 .flex-container {
@@ -280,6 +283,10 @@ input[type='submit']:hover {
     font-weight: bold;
     margin-bottom: 10px;
     display: block;
+}
+
+.flex-container:nth-last-child(2) {
+    border-bottom: solid 5px #fcb900;
 }
 
 .flex-item:hover {
@@ -395,6 +402,10 @@ input[type='submit']:hover {
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         transform: translateY(10px);
         /* Add this line */
+    }
+
+    .content {
+        display: block;
     }
 
     .menu.active {
