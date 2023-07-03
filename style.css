@@ -410,8 +410,15 @@ input[type='submit']:hover {
     width: 200px;
 }
 
-#image {
-    background-image: url(about-us-img-1.jpg);
+#image1 {
+    background-image: url(about1.jpg);
+    background-repeat: no-repeat;
+    height: 100% !important;
+    width: 100%;
+}
+
+#image2 {
+    background-image: url(about2.jpg);
     background-repeat: no-repeat;
     height: 100% !important;
     width: 100%;
