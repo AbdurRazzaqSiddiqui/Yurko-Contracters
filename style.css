@@ -17,14 +17,13 @@
 }
 
 .logo {
-    background-image: url(logo2.jpeg);
     position: relative;
-    margin-bottom: 10px;
-    width: 160px;
-    height: 60px;
-    background-size: cover;
+    background-image: url(logo2.png);
+    width: 20%;
+    height: 80px;
+    background-size: contain;
     background-repeat: no-repeat;
-    z-index: 1000;
+    /* border: solid 2px black; */
 }
 
 #title {
@@ -39,7 +38,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 0px 20px;
     background-color: #f9f9f9;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 100%;
@@ -51,7 +50,7 @@ h2 {
 
 .menu-toggle {
     display: none;
-    cursor: pointer;
+    cursor: pointer
     padding: 10px;
 }
 
@@ -495,11 +494,15 @@ iframe {
     height: 315px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
+    .logo {
+        width: 50%;
+    }
+
     .nav-bar {
         justify-content: space-between;
         align-items: center;
-        padding: 10px 20px;
+        padding: 0px 20px;
     }
 
     .menu-toggle {
@@ -553,7 +556,9 @@ iframe {
         transform: translateY(10px);
         /* Add this line */
     }
+}
 
+@media (max-width: 768px){
     .content {
         display: block;
     }
