@@ -180,7 +180,6 @@ h2 {
 }
 
 .fill-form {
-    /* position: absolute; */
     display: flex;
     text-decoration: none;
     background-color: #fcb900;
