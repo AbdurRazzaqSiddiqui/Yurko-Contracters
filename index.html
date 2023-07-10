@@ -24,6 +24,32 @@
 </head>
 
 <body>
+    <img src="message-logo.png" alt="Message" onclick="toggleMessagingPanel()"
+        style="z-index: 10; cursor: pointer; position: fixed; bottom: 20px; right: 20px; width: 50px; height: 50px; border-radius: 50%;">
+
+    <!-- Messaging Panel -->
+    <div class="messaging-panel" id="messagingPanel">
+        <div class="messaging-header">
+            <h5>Admin</h5>
+            <button class="close-button" onclick="toggleMessagingPanel()">&times;</button>
+        </div>
+        <div class="messaging-body">
+            <div class="message sender">
+                <p>Hello! How can I assist you today?</p>
+            </div>
+            <div class="message receiver">
+                <p>Hi! I have a question about your products.</p>
+            </div>
+            <div class="message sender">
+                <p>Sure, feel free to ask your question.</p>
+            </div>
+            <!-- Add more messages here as needed -->
+        </div>
+        <div class="messaging-footer">
+            <input type="text" class="messaging-input" placeholder="Type a message...">
+        </div>
+    </div>
+
     <!-- ========================================= NAVIGATION BAR ============================================ -->
     <div class="nav-bar">
         <div class="logo"></div>
@@ -225,8 +251,6 @@
             <span></span>
         </div>
         <div class="video">
-            <!-- Place your video embed code here -->
-            <!-- Example: <iframe src="https://www.youtube.com/embed/VIDEO_ID"></iframe> -->
             <div id="video"><iframe src="https://www.youtube.com/embed/k38J3asGK6M"></iframe>
             </div>
         </div>
