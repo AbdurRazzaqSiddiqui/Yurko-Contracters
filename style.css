@@ -206,6 +206,9 @@ h2 {
 .first-div h1 {
     color: black;
     font-size: 50px;
+    /* background-color: rgba(255, 196, 0, 0.3); */
+    font-weight: 900;
+    font-stretch: extra-expanded;
 }
 
 .first-div ul li {
@@ -290,12 +293,22 @@ input[type='submit']:hover {
     padding: 20px;
 }
 
+.content span {
+    border-bottom: solid 4px #fcb900;
+    display: block;
+    width: 150px;
+    margin-bottom: 10px;
+}
+
 .text {
     flex: 1;
     padding-right: 20px;
+    margin-left: 150px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border-top: solid 5px #fcb900;
-    border-bottom: solid 5px #fcb900;
+}
+
+.text p {
+    font-size: small;
 }
 
 .text h3 {
@@ -303,6 +316,14 @@ input[type='submit']:hover {
     font-weight: bold;
     margin-bottom: 10px;
     color: #33465b;
+}
+
+.text ul {
+    display:flex;
+}
+
+.text ul div:not(:last-child) {
+    margin-right: 20%;
 }
 
 .text p,
@@ -319,14 +340,16 @@ input[type='submit']:hover {
 }
 
 .video {
+    display: inline-block;
     flex: 1;
-    margin: 40px 0px;
+    margin-right: 150px;
 }
 
 .flex-container {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+    margin-bottom: 20px;
     /* opacity: 0.7; */
 }
 
@@ -521,7 +544,7 @@ input[type='submit']:hover {
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size:cover;
 }
 
 #image-1 {
@@ -548,53 +571,97 @@ iframe {
 .web-footer {
     display: flex;
     color: white;
+    padding-top: 50px;
+    padding-left: 180px;
     background-color: #1e335a;
-    padding: 50px 200px;
-    font-family: MyFont;
 }
 
-.web-footer h5 {
-    margin-bottom: 20%;
-}
-
-.web-footer .links {
-    display: flex;
-    flex-direction: column;
+.ft-logo {
+    position: relative;
+    background-image: url(logo2.png);
+    background-color: #ccc;
+    width: auto;
+    height: 70px;
+    margin-bottom: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .web-footer .links a {
+    display: block;
+    text-decoration: none;
     color: white;
     font-size: smaller;
-    text-decoration: none;
     font-weight:lighter;
-    margin-right: 20px;
-    font-family: MyFont;
-    width: 100%;
     outline: none;
+    margin-bottom: 10px;
 }
 
 .web-footer p {
-    font-weight: lighter;
     font-size: smaller;
-    font-weight: 100;
+    font-weight: lighter;
+    outline: none;
 }
 
-.ft-list1, .ft-list2, .ft-list3 {
-    width: 50%;
+.web-footer h5 {
+    margin-bottom: 20px;
+    outline: none;
+    font-size: large;
 }
 
-.ft-list1, .ft-list2 {
-    margin-right: 25%;
+.web-footer h6 {
+    margin-bottom: 20px;
+    outline: none;
 }
 
 .ft1-images {
     display: flex;
-    height: 100px;
-    width: 100%;
 }
 
-.ft1-images img:first-child {
+.ft1-images .image1 {
+    position: relative;
+    background-image: url('google-review.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+}
+
+.ft1-images .image2 {
+    position: relative;
+    background-image: url('best-award.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+}
+
+.ft1-images span {
+    margin-bottom: 50px;
+}
+
+.ft-list1 .social svg:first-of-type {
     margin-right: 10px;
+}
+
+.ft-list1, .ft-list2, .ft-list3 {
+    width: 30%;
+}
+
+.ft-list1, .ft-list2 {
+    margin-right: 100px;
+}
+
+.areas, .ft-list3 .services, .ft-list3 .products {
+    margin-bottom: 50px;
+}
+
+.area-details {
+    line-height:5px;
+}
+
+.area-name, .ft-list1 p {
+    margin-bottom: 30px;
 }
 
 @media (max-width: 1000px) {
@@ -721,6 +788,15 @@ iframe {
         text-align: center;
     }
 
+    .first-div h1 {
+        margin: 0;
+        text-indent: 0;
+        width: 100%;
+        height: 100%;
+        font-size: 150%;
+        line-height: normal;
+    }
+
     .container {
         left: 0;
     }
@@ -738,9 +814,14 @@ iframe {
         padding: 30px 0;
     }
 
+    .text {
+        margin: 0;
+    }
+
     .video {
         height: auto;
-        width: auto;
+        width: auto;;
+        align-items: center;
     }
 
     .about-us-info {
@@ -764,5 +845,51 @@ iframe {
     iframe {
         width: auto;
         height: auto;
+    }
+
+    .web-footer {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    
+    .ft-logo {
+        width: 50%;
+        height: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ft1-images {
+        margin-left: 30%;
+        margin-right: auto;
+    }
+    
+    .ft-list1 .social svg:first-of-type {
+        margin-right: 10px;
+    }
+    
+    .ft-list1, .ft-list2, .ft-list3 {
+        width: 100%;
+        margin-top: 50px;
+    }
+    
+    .ft-list1, .ft-list2 {
+        margin-right: 100px;
+    }
+    
+    .areas, .ft-list3 .services, .ft-list3 .products {
+        margin-bottom: 50px;
+    }
+    
+    .area-details {
+        line-height:5px;
+    }
+    
+    .area-name, .ft-list1 p {
+        margin-bottom: 30px;
     }
 }
