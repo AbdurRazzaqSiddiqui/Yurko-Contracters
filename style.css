@@ -428,6 +428,16 @@ input[type='submit']:hover {
     /* opacity: 0.7; */
 }
 
+.flex-subcontainer {
+    display: flex;
+    flex: 1 1 0px;
+    flex-wrap: wrap;
+}
+
+.flex-swapcontainer2 {
+    display: none;
+}
+
 .flex-back {
     padding: 50px;
     background-image: url(image4.jpg);
@@ -815,7 +825,8 @@ iframe {
     }
 
     .menu.active {
-        top: 80px;
+        z-index: 20;
+        top: 70px;
         display: flex;
     }
 
@@ -891,6 +902,23 @@ iframe {
 
     .flex-container {
         display: block;
+        margin: 0;
+    }
+
+    .flex-subcontainer {
+        margin-bottom: 10px;
+    }
+
+    .flex-swapcontainer1 {
+        display: none;
+    }
+
+    .flex-swapcontainer2 {
+        display: flex;
+    }
+
+    .images {
+        background-size: cover;
     }
 
     .flex-container-text {
@@ -926,9 +954,6 @@ iframe {
         margin-left: 0px;
     }
 
-    .images {
-        display: none;
-    }
 
     iframe {
         width: auto;
